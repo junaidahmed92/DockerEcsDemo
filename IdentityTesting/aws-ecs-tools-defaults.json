@@ -1,0 +1,9 @@
+
+{
+    "region" : "us-east-2",
+    "profile" : "junaid",
+    "configuration" : "Release",
+    "tag"           : "identitytesting:v4",
+    "docker-build-working-dir" : "",
+    "vstoolkit-deployment-mode" : "PushOnly"
+}
