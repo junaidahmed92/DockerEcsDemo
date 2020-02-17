@@ -21,9 +21,9 @@ phases:
       - echo Build completed on `date`
       - echo Pushing the Docker images...
       - docker push 556249139311.dkr.ecr.us-east-2.amazonaws.com/identitytesting:latest
-      - docker push identitytesting:latest 556249139311.dkr.ecr.us-east-2.amazonaws.com/identitytesting:latest
+      - docker push 556249139311.dkr.ecr.us-east-2.amazonaws.com/identitytesting:latest
       - echo Writing image definitions file...
-      - printf '[{"name":"identitytesting","imageUri":"%s"}]' identitytesting:latest 556249139311.dkr.ecr.us-east-2.amazonaws.com/identitytesting:latest > imagedefinitions.json
+      - printf '[{"name":"identitytesting","imageUri":"%s"}]' 556249139311.dkr.ecr.us-east-2.amazonaws.com/identitytesting:latest > imagedefinitions.json
       - cat imagedefinitions.json 
 artifacts:
     files: imagedefinitions.json
